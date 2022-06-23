@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+		<title>Philosophical Debates / Goldsmith - "The Citizen of the World"</title>
+		<link rel="stylesheet" href="css/nav.css">
+
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if IE 7]>
+	<link rel="stylesheet" href="css/ie.css">
+ 	<link rel="stylesheet" href="css/ie7.css">
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=GFS+Didot' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+table, td, th{border:0px;
+}
+td {font-family: sans-serif;
+padding:1px;
+}
+
+p.head {font-family: 'Mensch';
+    font-size:2em}
+p.date {text-align:right;}
+p.name {font-family: 'Mensch';
+	text-align:left;
+	font-size:1.5em;
+
+	margin-top:60px;
+	margin-right:15%;
+	margin-left:15%;
+}
+p.description {font-family: sans-serif;
+text-align:left;
+margin-right:15%;
+margin-left:15%;
+}
+p.alternate {font-family: 'Mensch';
+font-size:1em;
+text-align:center;
+margin-right:15%;
+margin-left:15%;
+}
+
+p.object {font-family: sans-serif;
+text-align:justify;
+
+margin-top:10px;
+margin-bottom:10px;
+margin-right:15%;
+margin-left:15%;
+}
+
+p.main {text-align:justify;
+
+margin-top:10px;
+margin-bottom:10px;
+margin-right:15%;
+margin-left:15%;
+}
+p.block {text-align:justify;
+margin-top:10px;
+margin-bottom:10px;
+margin-right:15%;
+margin-left:15%;
+}
+</style>
+	</head>
+	<body class="no-js" link="#CB171A" vlink="#CB171A" alink="#FF0000">
+	<script>
+	var el = document.getElementsByTagName("body")[0];
+	el.className = "";
+</script>
+		<nav id="topNav">
+	        	<ul>
+       		<li><a href="#" title="About">About</a>
+       		<ul>	
+                  <li><a href="intro.html" title="Introduction">Introduction</a></li>
+						<li><a href="credits.html" title="Credits">Credits</a></li>
+						<li><a href="bts.html" title="Behind the Scenes">Behind the Scenes</a></li>
+						<li><a href="bibliography.html" title="Further Reading">Further Reading</a></li>
+						<li><a href="http://www.music.fas.harvard.edu/" title="Harvard Dept. of Music">Harvard Dept. of Music</a></li>
+						<li class="last"><a href="http://hcl.harvard.edu/libraries/loebmusic/" title="Eda Kuhn Loeb Music Library">Eda Kuhn Loeb Music Library</a></li>
+               </ul>  
+       		</li>
+				<li><a href="#" title="Explore">Explore</a>
+					<ul>	
+                  <li><a href="china1.html" title="Chinese Music in China">Chinese Music</a></li>
+						<li><a href="jesuits.html" title="Jesuit Transmission">Jesuit Transmission</a></li>
+						<li><a href="philosophical.html" title="Philosophical Debates">Philosophical Debates</a></li>
+						<li><a href="domestic.html" title="Domestic Chinoiserie">Domestic Chinoiserie</a></li>
+						<li class="last"><a href="opera.html" title="China on the Operatic Stage">China on the Operatic Stage</a></li>
+               </ul>                
+				</li>
+				<li><a href="#" title="Explore">Tour</a>
+					<ul>	
+                  <li><a href="1A.html" title="Frontispiece">Frontispiece</a></li>
+						<li><a href="4A.html" title="Dedication">Dedication</a></li>
+						<li><a href="2A.html" title="Transcription">Transcription</a></li>
+						<li class="last"><a href="3A.html" title="Harmonization">Harmonization</a></li>
+               </ul>  				
+				</li>
+				<li><a href="#" title="Essays">Essays</a>
+				<ul>	
+                  <li><a href="Martin.html" title="Nathan Martin">Nathan John Martin</a></li>
+						<li><a href="Schweig.html" title="Meredith Schweig">Meredith Schweig</a></li>
+						<li><a href="Service.html" title="Jonathan Service">Jonathan Service</a></li>
+						<li><a href="Smentek.html" title="Kristel Smentek">Kristel Smentek</a></li>
+						<li class="last"><a href="Tsien.html" title="Jennifer Tsien">Jennifer Tsien</a></li>
+
+            </ul>  				
+				</li>
+				<li><a href="#" title="Multimedia">Multimedia</a>
+					<ul>	
+						<li><a href="guqin.html" title="Chinese Instruments">Chinese Instruments & the History of Chinese Music</a></li>                  
+                  <li><a href="duHalde.html" title="du Halde">du Halde in the Chinese Courts</a></li>
+						<li><a href="jesuitsobj8.html" title="Rameau">Rameau, "Les Sauvages"</a></li>
+						<li><a href="mooleechwa.html" title="Moo Lee Chwa">Performances of "Moo Lee Chwa"</a></li>
+						<li><a href="texts.html" title="18th-Century Texts">18th-Century Texts</a></li>
+						<li><a href="DomesticChinoiserie.html" title="Domestic Chinoiserie">Domestic Chinoiserie</a></li>
+						<li><a href="LeCinesi.html" title="Gluck">Christoph Gluck's <em>Le Cinesi</em></a></li>
+						<li class="last"><a href="Dittersdorf.html" title="Dittersdorf">Dittersdorf's Review of <em>Le Cinesi</em></a></li>
+               </ul>  				
+				</li>
+				<li><img src="trans.jpg" height=55></li>
+			</ul>
+		</nav>
+		<script src="js/jquery.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script>
+(function($){
+				
+		//cache nav
+		var nav = $("#topNav");
+				
+		//add indicators and hovers to submenu parents
+		nav.find("li").each(function() {
+			if ($(this).find("ul").length > 0) {
+				
+				$("<span>").text("^").appendTo($(this).children(":first"));
+
+				//show subnav on hover
+				$(this).mouseenter(function() {
+					$(this).find("ul").stop(true, true).slideDown();
+				});
+						
+				//hide submenus on exit
+				$(this).mouseleave(function() {
+					$(this).find("ul").stop(true, true).slideUp();
+				});
+			}
+		});
+	})(jQuery);
+</script>
+
+
+<center>
+<p class="name">The Citizen of the World
+<p class="description">Oliver Goldsmith</br>
+Chiswick, 1819</br>
+Widener Library</br>
+KE 26574 (2)
+ 
+</p>
+<p class="object"><a href="philosophicalobj2.jpg" target="_blank"><img src="philosophicalthumb2.jpg" height="400" align="left" style="float: left" hspace="20" alt="Click for full-size image"></a>Oliver Goldsmith’s satirical novel, originally published in 1760, employs as its narrator a fictionalized Chinese philosopher in London, who writes letters home reporting on strange European customs. The China represented here is a utopian construct, employed for the purposes of critique and satire. Enlightenment thinkers often toyed with non-western cultures in this fashion as a lens to gain an outside, exotic, perspective on European society. </p>
+<p class="main">(Click image for full-sized reproduction)</p>
+
+<p class="main"><a href="http://books.google.com/books?id=cIELAAAAIAAJ&source=gbs_navlinks_s" target="_blank">Read Goldsmith's <em>The Citizen of the World</em></a></p>
+
+
+<p class="alternate">Related objects:</p>
+<p class="alternate"><a href="philosophicalobj4.html"><img src="philosophicalthumb4.jpg" height="100" hspace="10"></a><a href="domesticobj1.html"><img src="36square.jpg" height="100" hspace="10"></a>
+<p class="main">&nbsp;</p>
+<p class="alternate"><a href="philosophical.html">Back to Collection</a></p>
+<p class="main">&nbsp;</p>
+
+<link rel="stylesheet" type="text/css" href="css/cam1.css" >
+
+<div class="cam-main960 explore">
+<div class="cam-footer clr">
+<div class="cam-lhs cam-fl">
+
+<div class="cam-contact">
+<p class="cam-date">Oct 1, 2013</p>
+						
+<p class="cam-hop"> </p>
+<p>Harvard University Department of Music</br>
+North Yard</br>
+Cambridge, MA 02138</br>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+</div>
+</div>
+
+<div class="cam-rhs">
+
+		<div class="moduletable">
+					<h3>about</h3>
+					<ul class="menu cam-footer-links"><li class="item2"><a href="intro.html"><span>Introduction</span></a></li><li class="item4"><a href="credits.html"><span>Credits</span></a></li><li class="item6"><a href="bts.html"><span>Behind the Scenes</span></a></li><li class="item6"><a href="bibliography.html"><span>Further Reading</span></a></li><li class="item6"><a href="http://www.music.fas.harvard.edu/"><span>Harvard Dept. of Music</span></a></li><li class="item6"><a href="http://hcl.harvard.edu/libraries/loebmusic/"><span>Eda Kuhn Loeb Music Library</span></a></li></ul>		</div>
+		
+		<div class="moduletable">
+					<h3>explore</h3>
+					<ul class="menu cam-footer-links"><li class="item2"><a href="china1.html"><span>Chinese Music</span></a></li><li class="item4"><a href="jesuits.html"><span>Jesuit Transmission</span></a></li><li class="item6"><a href="philosophical.html"><span>Philosophical Debates</span></a></li><li class="item6"><a href="domestic.html"><span>Domestic Chinoiserie</span></a></li><li class="item6"><a href="opera.html"><span>China on the Operatic Stage</span></a></li></ul>		</div>
+		
+		<div class="moduletable">
+					<h3>essays</h3>
+					<ul class="menu cam-footer-links"><li class="item1"><a href="Martin.html"><span>Nathan John Martin</span></a></li><li class="item2"><a href="Rehding.html"><span>Alexander Rehding</span></a></li><li class="item6"><a href="Schweig.html"><span>Meredith Schweig</span></a></li><li class="item6"><a href="Service.html"><span>Jonathan Service</span></a></li><li class="item5"><a href="smentek.html"><span>Kristel Smentek</span></a></li><li class="item6"><a href="Tsien.html"><span>Jennifer Tsien</span></a></li></ul>		</div>
+		
+		<div class="moduletable">
+					<h3>multimedia</h3>
+					<ul class="menu cam-footer-links"><li class="item1"><a href="guqin.html" title="Chinese Instruments">Chinese Instruments & the History of Chinese Music</a></li>
+					<li class="item2"><a href="duHalde.html"><span>du Halde in the Chinese Courts</span></a>
+					<li class="item3"><a href="jesuitsobj8.html"><span>Rameau: "Les Sauvages"</span></a></li>
+					<li class="item4"><a href="mooleechwa.html"><span>Performances of "Moo Lee Chwa"</span></a></li>
+					<li class="item5"><a href="texts.html"><span>18th-Century Texts</span></a></li>
+					<li class="item6"><a href="DomesticChiniserie.html"><span>Domestic Chinoiserie</span></a></li>
+					<li class="item7"><a href="LeCinesi.html"><span>C.W. Gluck's <em>Le Cinesi</em></span></a></li>
+					<li class="item8"><a href="Dittersdorf.html"><span>Dittersdorf's Review of <em>Le Cinesi</em></span></a></li>
+					</ul>		</div>
+		
+	
+</div>
+
+	</body>
+</html>
