@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+		<title>About / Introduction</title>
+		<link rel="stylesheet" href="css/nav.css">
+
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if IE 7]>
+	<link rel="stylesheet" href="css/ie.css">
+ 	<link rel="stylesheet" href="css/ie7.css">
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=GFS+Didot' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+table, td, th{border:0px;
+}
+td {font-family: sans-serif;
+padding:1px;
+}
+
+p.head {font-family: 'Mensch';
+    font-size:2em}
+p.date {text-align:right;}
+p.name {font-family: 'Mensch';
+	text-align:left;
+	font-size:1.5em;
+
+	margin-top:60px;
+	margin-right:15%;
+	margin-left:15%;
+}
+p.description {font-family: sans-serif;
+text-align:left;
+margin-right:15%;
+margin-left:15%;
+}
+p.alternate {font-family: 'Mensch';
+font-size:1em;
+text-align:center;
+margin-right:15%;
+margin-left:15%;
+}
+
+p.object {font-family: sans-serif;
+text-align:justify;
+
+margin-top:10px;
+margin-bottom:10px;
+margin-right:15%;
+margin-left:15%;
+}
+
+p.main {text-align:justify;
+
+margin-top:10px;
+margin-bottom:10px;
+margin-right:15%;
+margin-left:15%;
+}
+p.block {text-align:justify;
+margin-top:10px;
+margin-bottom:10px;
+margin-right:15%;
+margin-left:15%;
+}
+</style>
+	</head>
+	<body class="no-js" link="#CB171A" vlink="#CB171A" alink="#FF0000">
+	<script>
+	var el = document.getElementsByTagName("body")[0];
+	el.className = "";
+</script>
+	
+		<script src="js/jquery.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script>
+(function($){
+				
+		//cache nav
+		var nav = $("#topNav");
+				
+		//add indicators and hovers to submenu parents
+		nav.find("li").each(function() {
+			if ($(this).find("ul").length > 0) {
+				
+				$("<span>").text("^").appendTo($(this).children(":first"));
+
+				//show subnav on hover
+				$(this).mouseenter(function() {
+					$(this).find("ul").stop(true, true).slideDown();
+				});
+						
+				//hide submenus on exit
+				$(this).mouseleave(function() {
+					$(this).find("ul").stop(true, true).slideUp();
+				});
+			}
+		});
+	})(jQuery);
+</script>
+
+<!--content starts-->
+<center>
+
+<p class="main"><a href="intro.html"><img src="logo.jpg"></a></p>
+<p class="main">&nbsp;</p>
+<center><p class="main"><a href="http://freehitcountercode.com/"><img border="0" src="http://www.freehitcountercode.com/counter.php?b=ffffff&r=000000&f=000000&unique=0&start=0" width="120" height="30" /></a><br /></p>
+</center>
+
+
+<p class="alternate">&nbsp; </p>
+
+</center>
+
+<link rel="stylesheet" type="text/css" href="css/cam1.css" >
+
+
+
+	</body>
+</html>
